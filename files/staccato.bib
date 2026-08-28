@@ -1,0 +1,18 @@
+@inproceedings{staccao2026,
+author = {Selagamsetty, Ranganath and San Miguel, Joshua and Lipasti, Mikko},
+title = {StAccato: Reducing the Performance Penalty of Randomness},
+year = {2026},
+isbn = {9798400725685},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/3801487.3801821},
+doi = {10.1145/3801487.3801821},
+abstract = {Pseudo-random numbers are integral to Monte Carlo methods, machine learning optimizations, and physics simulations, among other applications. However, reliance on a stream of stochastic values introduces significant performance overheads. Prior works identify one of these overheads as misprediction penalties when probabilistic values are used to determine the outcome of a branch. This work broadens the scope to address additional performance costs associated with using a stochastic value (SV) beyond branch mispredictions, including those from generation strategies, arithmetic transforms, and memory operations dependent on SVs. We introduce StAccato, a stochastic accelerator that addresses randomness from generation to consumption. StAccato mitigates performance loss by leveraging a fast, high-quality hardware random number generator design, reducing latency and computational costs. We also present a compiler design to translate code to fully utilize StAccato, optionally leveraging a helper thread for further speedup. This achieves an average of 1.49x speedup—97.9\% of the attainable ideal. Even without helper thread support, StAccato delivers a 1.34x speedup over the selected benchmarks. By combining hardware acceleration with compiler automation, StAccato optimizes stochastic workloads across diverse applications.},
+booktitle = {Proceedings of the 23rd ACM International Conference on Computing Frontiers},
+pages = {10–19},
+numpages = {10},
+keywords = {Tightly coupled accelerators, stochastic workloads, pseudo-random number generators},
+location = {
+},
+series = {CF '26}
+}
